@@ -184,7 +184,7 @@ STRINGS.CHARACTERS.ALEX = require "speech_alex"
 AddMinimapAtlas("images/map_icons/alex.xml")
 if GetModConfigData("ALEX") then AddModCharacter("alex", "FEMALE") end
 
-STRINGS.CHARACTER_TITLES.austin = "Aussie TEST"
+STRINGS.CHARACTER_TITLES.austin = "Aussie"
 STRINGS.CHARACTER_NAMES.austin = "Austin"
 STRINGS.CHARACTER_DESCRIPTIONS.austin = "*Perk 1\n*Perk 2\n*Perk 3"
 STRINGS.CHARACTER_QUOTES.austin = "\"Quote\""

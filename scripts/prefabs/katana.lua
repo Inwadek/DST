@@ -122,7 +122,7 @@ local function init()
     inst.entity:SetPristine()
 
     inst:AddComponent("weapon")
-    inst.components.weapon:SetDamage(TUNING.KATANA_DAMAGE)
+    inst.components.weapon:SetDamage(150)
 	
 	inst:AddComponent("tool")
 	inst.components.tool:SetAction(ACTIONS.CHOP,4)

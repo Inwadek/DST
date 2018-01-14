@@ -2,7 +2,7 @@
 name = "ZWC Group"
 description = "Our group in DST!"
 author = "zerowolfcode"
-version = "1"
+version = "2"
 
 -- This is the URL name of the mod's thread on the forum; the part after the ? and before the first & in the url
 forumthread = "/files/file/950-extended-sample-character/"
