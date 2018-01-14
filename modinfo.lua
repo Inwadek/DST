@@ -2,7 +2,7 @@
 name = "ZWC Group"
 description = "Our group in DST!"
 author = "zerowolfcode"
-version = "0"
+version = "1"
 
 -- This is the URL name of the mod's thread on the forum; the part after the ? and before the first & in the url
 forumthread = "/files/file/950-extended-sample-character/"
@@ -74,6 +74,16 @@ configuration_options =
 		name = "GRACIE",
 		label = "Gracie",
 		hover = "Have Gracie available",
+		options =	{
+						{description = "Yes", data = true},
+						{description = "No", data = false},
+					},
+		default = true,
+	},
+	{
+		name = "MATT",
+		label = "Matthew",
+		hover = "Have Matthew available",
 		options =	{
 						{description = "Yes", data = true},
 						{description = "No", data = false},

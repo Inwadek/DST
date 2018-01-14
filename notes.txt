@@ -1,0 +1,3 @@
+unnessessary files (built by compiler);
+\anim all except items
+all xml and tex

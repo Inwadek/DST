@@ -7,7 +7,10 @@ PrefabFiles = {
 	"gracie_none",
 	"kaylee",
 	"kaylee_none",
+	"matt",
+	"matt_none",
 	"bloodyaxe",
+	"katana",
 	"lighter",
 }
 
@@ -131,6 +134,36 @@ Assets = {
 	
     Asset( "IMAGE", "bigportraits/kaylee_none.tex" ),
     Asset( "ATLAS", "bigportraits/kaylee_none.xml" ),
+	
+	Asset( "IMAGE", "images/saveslot_portraits/matt.tex" ),
+    Asset( "ATLAS", "images/saveslot_portraits/matt.xml" ),
+
+    Asset( "IMAGE", "images/selectscreen_portraits/matt.tex" ),
+    Asset( "ATLAS", "images/selectscreen_portraits/matt.xml" ),
+	
+    Asset( "IMAGE", "images/selectscreen_portraits/matt_silho.tex" ),
+    Asset( "ATLAS", "images/selectscreen_portraits/matt_silho.xml" ),
+
+    Asset( "IMAGE", "bigportraits/matt.tex" ),
+    Asset( "ATLAS", "bigportraits/matt.xml" ),
+	
+	Asset( "IMAGE", "images/map_icons/matt.tex" ),
+	Asset( "ATLAS", "images/map_icons/matt.xml" ),
+	
+	Asset( "IMAGE", "images/avatars/avatar_matt.tex" ),
+    Asset( "ATLAS", "images/avatars/avatar_matt.xml" ),
+	
+	Asset( "IMAGE", "images/avatars/avatar_ghost_matt.tex" ),
+    Asset( "ATLAS", "images/avatars/avatar_ghost_matt.xml" ),
+	
+	Asset( "IMAGE", "images/avatars/self_inspect_matt.tex" ),
+    Asset( "ATLAS", "images/avatars/self_inspect_matt.xml" ),
+	
+	Asset( "IMAGE", "images/names_matt.tex" ),
+    Asset( "ATLAS", "images/names_matt.xml" ),
+	
+    Asset( "IMAGE", "bigportraits/matt_none.tex" ),
+    Asset( "ATLAS", "bigportraits/matt_none.xml" ),
 }
 
 local require = GLOBAL.require
@@ -157,6 +190,7 @@ STRINGS.CHARACTER_DESCRIPTIONS.austin = "*Perk 1\n*Perk 2\n*Perk 3"
 STRINGS.CHARACTER_QUOTES.austin = "\"Quote\""
 STRINGS.CHARACTERS.AUSTIN = require "speech_austin"
 STRINGS.NAMES.AUSTIN = "Austin"
+AddMinimapAtlas("images/map_icons/austin.xml")
 if GetModConfigData("AUSTIN") then AddModCharacter("austin", "MALE") end
 
 STRINGS.CHARACTER_TITLES.gracie = "Gracie"
@@ -177,5 +211,18 @@ STRINGS.CHARACTERS.KAYLEE = require "speech_kaylee"
 AddMinimapAtlas("images/map_icons/kaylee.xml")
 if GetModConfigData("KAYLEE") then AddModCharacter("kaylee", "FEMALE") end
 
+STRINGS.CHARACTER_TITLES.matt = "Matt the Barber"
+STRINGS.CHARACTER_NAMES.matt = "Matthew"
+STRINGS.CHARACTER_DESCRIPTIONS.matt = "*Perk 1\n*Perk 2\n*Perk 3"
+STRINGS.CHARACTER_QUOTES.matt = "\"Quote\""
+STRINGS.CHARACTERS.MATT = require "speech_matt"
+STRINGS.NAMES.MATT = "Matthew"
+AddMinimapAtlas("images/map_icons/matt.xml")
+if GetModConfigData("MATT") then AddModCharacter("matt", "MALE") end
+
 STRINGS.NAMES.BLOODYAXE = "Bloody Axe"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.BLOODYAXE = "Looks like an axe."
+
+STRINGS.NAMES.KATANA = "Dark Katana"
+STRINGS.RECIPE_DESC.KATANA = "Only a Dark Master may safely wield it..."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.KATANA = "That looks creepishly sharp!!!"
