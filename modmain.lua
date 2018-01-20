@@ -169,10 +169,21 @@ Assets = {
 local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
 
-if GetModConfigData("OP") then
-	GLOBAL.ATT = 300
-else
-	GLOBAL.ATT = 150
+GLOBAL.ATT = GetModConfigData("STATS")
+
+GLOBAL.ATF = function(inst,nm)
+	inst.soundsname = nm
+	inst.components.health:SetMaxHealth(GLOBAL.ATT)
+	inst.components.hunger:SetMax(GLOBAL.ATT)
+	inst.components.sanity:SetMax(GLOBAL.ATT)
+	inst.components.health:StartRegen(2 , 1, false)
+	inst.components.sanity.night_drain_mult = -2
+	inst.components.combat.damagemultiplier = 1
+	inst.components.hunger.hungerrate = 0.1 * TUNING.WILSON_HUNGER_RATE
+	inst.components.locomotor.walkspeed = 15
+	inst.components.locomotor.runspeed = 15
+	inst.OnLoad = onload
+    inst.OnNewSpawn = onload
 end
 
 STRINGS.CHARACTER_TITLES.alex = "Alex aka Pooky"

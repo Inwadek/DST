@@ -2,7 +2,7 @@
 name = "ZWC Group"
 description = "Our group in DST!"
 author = "zerowolfcode"
-version = "2"
+version = "3"
 
 -- This is the URL name of the mod's thread on the forum; the part after the ? and before the first & in the url
 forumthread = "/files/file/950-extended-sample-character/"
@@ -29,65 +29,55 @@ server_filter_tags = {
 "character",
 }
 
+local OPT = {
+				{description = "Yes", data = true},
+				{description = "No", data = false},
+			}
+
 configuration_options = 
 {
 	{
-		name = "OP";
-		label = "OP";
+		name = "STATS";
+		label = "Stats";
 		options =	{
-						{description = "Yes", data = true},
-						{description = "No", data = false},
+						{description = "150", data = 150},
+						{description = "300", data = 300},
 					},
-		default = true,
+		default = 300,
 	},
 	{
 		name = "ALEX",
 		label = "Alex",
 		hover = "Have Alex available",
-		options =	{
-						{description = "Yes", data = true},
-						{description = "No", data = false},
-					},
+		options = OPT,
 		default = true,
 	},
 	{
 		name = "AUSTIN",
 		label = "Austin",
 		hover = "Have Austin available",
-		options =	{
-						{description = "Yes", data = true},
-						{description = "No", data = false},
-					},
+		options = OPT,
 		default = true,
 	},
 	{
 		name = "KAYLEE",
 		label = "Kaylee",
 		hover = "Have Kaylee available",
-		options =	{
-						{description = "Yes", data = true},
-						{description = "No", data = false},
-					},
+		options = OPT,
 		default = true,
 	},
 	{
 		name = "GRACIE",
 		label = "Gracie",
 		hover = "Have Gracie available",
-		options =	{
-						{description = "Yes", data = true},
-						{description = "No", data = false},
-					},
+		options = OPT,
 		default = true,
 	},
 	{
 		name = "MATT",
 		label = "Matthew",
 		hover = "Have Matthew available",
-		options =	{
-						{description = "Yes", data = true},
-						{description = "No", data = false},
-					},
+		options = OPT,
 		default = true,
 	},
 }

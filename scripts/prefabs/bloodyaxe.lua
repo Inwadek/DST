@@ -42,7 +42,7 @@ local function fn(Sim)
     inst:AddComponent("inventoryitem")
     inst.components.inventoryitem.atlasname = "images/inventoryimages/bloodyaxe.xml"
      
-	 inst:AddComponent("weapon")
+	inst:AddComponent("weapon")
     inst.components.weapon:SetDamage(150)
 	
 	inst:AddComponent("tool")
