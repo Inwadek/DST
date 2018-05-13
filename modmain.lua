@@ -33,9 +33,6 @@ Assets = {
 	Asset( "IMAGE", "images/avatars/avatar_alex.tex" ),
     Asset( "ATLAS", "images/avatars/avatar_alex.xml" ),
 	
-	Asset( "IMAGE", "images/avatars/avatar_ghost_alex.tex" ),
-    Asset( "ATLAS", "images/avatars/avatar_ghost_alex.xml" ),
-	
 	Asset( "IMAGE", "images/avatars/self_inspect_alex.tex" ),
     Asset( "ATLAS", "images/avatars/self_inspect_alex.xml" ),
 	
@@ -62,9 +59,6 @@ Assets = {
 	
 	Asset( "IMAGE", "images/avatars/avatar_austin.tex" ),
     Asset( "ATLAS", "images/avatars/avatar_austin.xml" ),
-	
-	Asset( "IMAGE", "images/avatars/avatar_ghost_austin.tex" ),
-    Asset( "ATLAS", "images/avatars/avatar_ghost_austin.xml" ),
 	
 	Asset( "IMAGE", "images/avatars/self_inspect_austin.tex" ),
     Asset( "ATLAS", "images/avatars/self_inspect_austin.xml" ),
@@ -93,9 +87,6 @@ Assets = {
 	Asset( "IMAGE", "images/avatars/avatar_gracie.tex" ),
     Asset( "ATLAS", "images/avatars/avatar_gracie.xml" ),
 	
-	Asset( "IMAGE", "images/avatars/avatar_ghost_gracie.tex" ),
-    Asset( "ATLAS", "images/avatars/avatar_ghost_gracie.xml" ),
-	
 	Asset( "IMAGE", "images/avatars/self_inspect_gracie.tex" ),
     Asset( "ATLAS", "images/avatars/self_inspect_gracie.xml" ),
 	
@@ -123,9 +114,6 @@ Assets = {
 	Asset( "IMAGE", "images/avatars/avatar_kaylee.tex" ),
     Asset( "ATLAS", "images/avatars/avatar_kaylee.xml" ),
 	
-	Asset( "IMAGE", "images/avatars/avatar_ghost_kaylee.tex" ),
-    Asset( "ATLAS", "images/avatars/avatar_ghost_kaylee.xml" ),
-	
 	Asset( "IMAGE", "images/avatars/self_inspect_kaylee.tex" ),
     Asset( "ATLAS", "images/avatars/self_inspect_kaylee.xml" ),
 	
@@ -152,9 +140,6 @@ Assets = {
 	
 	Asset( "IMAGE", "images/avatars/avatar_matt.tex" ),
     Asset( "ATLAS", "images/avatars/avatar_matt.xml" ),
-	
-	Asset( "IMAGE", "images/avatars/avatar_ghost_matt.tex" ),
-    Asset( "ATLAS", "images/avatars/avatar_ghost_matt.xml" ),
 	
 	Asset( "IMAGE", "images/avatars/self_inspect_matt.tex" ),
     Asset( "ATLAS", "images/avatars/self_inspect_matt.xml" ),
@@ -188,45 +173,30 @@ end
 
 STRINGS.CHARACTER_TITLES.alex = "Alex aka Pooky"
 STRINGS.CHARACTER_NAMES.alex = "Alex aka Pooky"
-STRINGS.CHARACTER_DESCRIPTIONS.alex = "*Perk 1\n*Perk 2\n*Perk 3"
-STRINGS.CHARACTER_QUOTES.alex = "\"Quote\""
 STRINGS.NAMES.ALEX = "Alex aka Pooky"
-STRINGS.CHARACTERS.ALEX = require "speech_alex"
 AddMinimapAtlas("images/map_icons/alex.xml")
 if GetModConfigData("ALEX") then AddModCharacter("alex", "FEMALE") end
 
 STRINGS.CHARACTER_TITLES.austin = "Aussie"
 STRINGS.CHARACTER_NAMES.austin = "Austin"
-STRINGS.CHARACTER_DESCRIPTIONS.austin = "*Perk 1\n*Perk 2\n*Perk 3"
-STRINGS.CHARACTER_QUOTES.austin = "\"Quote\""
-STRINGS.CHARACTERS.AUSTIN = require "speech_austin"
 STRINGS.NAMES.AUSTIN = "Austin"
 AddMinimapAtlas("images/map_icons/austin.xml")
 if GetModConfigData("AUSTIN") then AddModCharacter("austin", "MALE") end
 
 STRINGS.CHARACTER_TITLES.gracie = "Gracie"
 STRINGS.CHARACTER_NAMES.gracie = "Gracie"
-STRINGS.CHARACTER_DESCRIPTIONS.gracie = "*Perk 1\n*Perk 2\n*Perk 3"
-STRINGS.CHARACTER_QUOTES.gracie = "\"Quote\""
-STRINGS.CHARACTERS.GRACIE = require "speech_gracie"
 STRINGS.NAMES.GRACIE = "Gracie"
 AddMinimapAtlas("images/map_icons/gracie.xml")
 if GetModConfigData("GRACIE") then AddModCharacter("gracie", "FEMALE") end
 
 STRINGS.CHARACTER_TITLES.kaylee = "Kaylee the Dandelion"
 STRINGS.CHARACTER_NAMES.kaylee = "Kaylee the Dandelion"
-STRINGS.CHARACTER_DESCRIPTIONS.kaylee = "*Perk 1\n*Perk 2\n*Perk 3"
-STRINGS.CHARACTER_QUOTES.kaylee = "\"Quote\""
 STRINGS.NAMES.KAYLEE = "Kaylee the Dandelion"
-STRINGS.CHARACTERS.KAYLEE = require "speech_kaylee"
 AddMinimapAtlas("images/map_icons/kaylee.xml")
 if GetModConfigData("KAYLEE") then AddModCharacter("kaylee", "FEMALE") end
 
 STRINGS.CHARACTER_TITLES.matt = "Matt the Barber"
 STRINGS.CHARACTER_NAMES.matt = "Matthew"
-STRINGS.CHARACTER_DESCRIPTIONS.matt = "*Perk 1\n*Perk 2\n*Perk 3"
-STRINGS.CHARACTER_QUOTES.matt = "\"Quote\""
-STRINGS.CHARACTERS.MATT = require "speech_matt"
 STRINGS.NAMES.MATT = "Matthew"
 AddMinimapAtlas("images/map_icons/matt.xml")
 if GetModConfigData("MATT") then AddModCharacter("matt", "MALE") end

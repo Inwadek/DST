@@ -1,5 +1,5 @@
 -- This information tells other players more about the mod
-name = "ZWC Group"
+name = "ZWC Group TEST"
 description = "Our group in DST!"
 author = "zerowolfcode"
 version = "3"

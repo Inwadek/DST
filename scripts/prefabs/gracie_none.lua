@@ -1,13 +1,11 @@
 local assets =
 {
 	Asset( "ANIM", "anim/gracie.zip" ),
-	Asset( "ANIM", "anim/ghost_gracie_build.zip" ),
 }
 
 local skins =
 {
 	normal_skin = "gracie",
-	ghost_skin = "ghost_gracie_build",
 }
 
 local base_prefab = "gracie"

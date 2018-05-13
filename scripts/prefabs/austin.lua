@@ -9,27 +9,6 @@ local start_inv = {
 	"bloodyaxe",
 }
 
-local function onbecamehuman(inst)
-	-- Set speed when reviving from ghost (optional)
-	inst.components.locomotor:SetExternalSpeedMultiplier(inst, "austin_speed_mod", 1)
-end
-
-local function onbecameghost(inst)
-	-- Remove speed modifier when becoming a ghost
-   inst.components.locomotor:RemoveExternalSpeedMultiplier(inst, "austin_speed_mod")
-end
-
-local function onload(inst)
-    inst:ListenForEvent("ms_respawnedfromghost", onbecamehuman)
-    inst:ListenForEvent("ms_becameghost", onbecameghost)
-
-    if inst:HasTag("playerghost") then
-        onbecameghost(inst)
-    else
-        onbecamehuman(inst)
-    end
-end
-
 local common_postinit = function(inst) 
 	inst.MiniMapEntity:SetIcon( "austin.tex" )
 end

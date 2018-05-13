@@ -6,21 +6,6 @@ local prefabs = {}
 local start_inv = {
 	"lighter",
 }
-local function onbecamehuman(inst)
-	inst.components.locomotor:SetExternalSpeedMultiplier(inst, "kaylee_speed_mod", 1)
-end
-local function onbecameghost(inst)
-   inst.components.locomotor:RemoveExternalSpeedMultiplier(inst, "kaylee_speed_mod")
-end
-local function onload(inst)
-    inst:ListenForEvent("ms_respawnedfromghost", onbecamehuman)
-    inst:ListenForEvent("ms_becameghost", onbecameghost)
-    if inst:HasTag("playerghost") then
-        onbecameghost(inst)
-    else
-        onbecamehuman(inst)
-    end
-end
 local common_postinit = function(inst)
 	inst.MiniMapEntity:SetIcon( "kaylee.tex" )
 end

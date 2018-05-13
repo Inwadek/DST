@@ -7,21 +7,6 @@ local start_inv = {
 	"spidereggsack",
 	"spear",
 }
-local function onbecamehuman(inst)
-	inst.components.locomotor:SetExternalSpeedMultiplier(inst, "gracie_speed_mod", 1)
-end
-local function onbecameghost(inst)
-	inst.components.locomotor:RemoveExternalSpeedMultiplier(inst, "gracie_speed_mod")
-end
-local function onload(inst)
-	inst:ListenForEvent("ms_respawnedfromghost", onbecamehuman)
-	inst:ListenForEvent("ms_becameghost", onbecameghost)
-	if inst:HasTag("playerghost") then
-		onbecameghost(inst)
-	else
-		onbecamehuman(inst)
-	end
-end
 local common_postinit = function(inst) 
 	inst:AddTag("spiderwhisperer")
 	inst.MiniMapEntity:SetIcon( "gracie.tex" )
