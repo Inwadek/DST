@@ -1,14 +1,11 @@
 local MakePlayerCharacter = require "prefabs/player_common"
-
 local assets = {
     Asset("SCRIPT", "scripts/prefabs/player_common.lua"),
 }
 local prefabs = {}
-
 local start_inv = {
 	"bloodyaxe",
 }
-
 local common_postinit = function(inst) 
 	inst.MiniMapEntity:SetIcon( "austin.tex" )
 end

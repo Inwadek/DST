@@ -12,6 +12,7 @@ PrefabFiles = {
 	"bloodyaxe",
 	"katana",
 	"lighter",
+	"jajangmon_hw_syrup",
 }
 
 Assets = {
@@ -158,9 +159,9 @@ GLOBAL.ATT = GetModConfigData("STATS")
 GLOBAL.MODE = GetModConfigData("MODE")
 
 GLOBAL.UPGRADE = function(inst)
-	local max_upgrades = 50
+	local max_upgrades = 25
 	local upgrades = math.min(inst.level, max_upgrades)
-	local increase = 5
+	local increase = 10
 	local hunger_percent = inst.components.hunger:GetPercent()
 	local health_percent = inst.components.health:GetPercent()
 	local sanity_percent = inst.components.sanity:GetPercent()
@@ -180,7 +181,7 @@ GLOBAL.UPGRADE = function(inst)
 	inst.components.sanity:SetPercent(sanity_percent)
 end
 GLOBAL.ONEAT = function(inst, food)
-	if food and food.components.edible and food.prefab == "dragonfruit" then
+	if food and food.components.edible and food.prefab == "jajangmon_hw_syrup" then
 		inst.level = inst.level + 1
 		GLOBAL.UPGRADE(inst)
 		inst.HUD.controls.status.heart:PulseGreen()
@@ -268,3 +269,30 @@ STRINGS.CHARACTERS.GENERIC.DESCRIBE.BLOODYAXE = "Looks like an axe."
 STRINGS.NAMES.KATANA = "Dark Katana"
 STRINGS.RECIPE_DESC.KATANA = "Only a Dark Master may safely wield it..."
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.KATANA = "That looks creepishly sharp!!!"
+
+
+
+
+local require = GLOBAL.require
+local STRINGS = GLOBAL.STRINGS
+local Ingredient = GLOBAL.Ingredient
+local RECIPETABS = GLOBAL.RECIPETABS
+local TECH = GLOBAL.TECH
+local resolvefilepath = GLOBAL.resolvefilepath
+local TUNING = GLOBAL.TUNING
+
+
+local jajangmon_hw_syrup_recipe = AddRecipe("jajangmon_hw_syrup",
+ { Ingredient("dragonfruit", 1), Ingredient("meat", 10), Ingredient("monstermeat", 10), Ingredient("goldnugget", 10)},
+ RECIPETABS.FARM,
+ TECH.NONE,
+ nil,
+ nil,
+ nil,
+ nil,
+ nil,
+ "images/inventoryimages/jajangmon_hw_syrup.xml" )
+jajangmon_hw_syrup_recipe.sortkey = 0
+GLOBAL.STRINGS.RECIPE_DESC.JAJANGMON_HW_SYRUP = "Sweet syrup made with pumpkin"
+STRINGS.NAMES.JAJANGMON_HW_SYRUP = "Pumpkin syrup"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.JAJANGMON_HW_SYRUP = "SO Sweet"

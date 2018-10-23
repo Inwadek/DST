@@ -1,0 +1,2 @@
+Building 'C:\Program Files (x86)\Steam\steamapps\common\Don't Starve Mod Tools\mod_tools\..\..\dont_starve\mods\cookpotfix/exported\jajangmon_hw_syrup\jajangmon_hw_syrup.scml'.
+ERROR: Missing image 'base.png' referenced by 'jajangmon_hw_syrup.scml'.

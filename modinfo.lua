@@ -1,8 +1,8 @@
 -- This information tells other players more about the mod
-name = "ZWC Group TEST"
+name = "ZWC Group"
 description = "Our group in DST!"
 author = "zerowolfcode"
-version = "3"
+version = "5"
 
 -- This is the URL name of the mod's thread on the forum; the part after the ? and before the first & in the url
 forumthread = "/files/file/950-extended-sample-character/"
@@ -40,10 +40,18 @@ configuration_options =
 		name = "STATS";
 		label = "Stats";
 		options =	{
+						{description = "100", data = 100},
 						{description = "150", data = 150},
 						{description = "300", data = 300},
 					},
 		default = 300,
+	},
+	{
+		name = "MODE";
+		label = "Dragon Mode";
+		hover = "Gain power from dragon fruit",
+		options = OPT,
+		default = false,
 	},
 	{
 		name = "ALEX",
