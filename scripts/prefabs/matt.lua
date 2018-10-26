@@ -4,7 +4,8 @@ local assets = {
 }
 local prefabs = {}
 local start_inv = {
-	"katana",
+	"lighter",
+	"katana"
 }
 local common_postinit = function(inst)
 	inst.MiniMapEntity:SetIcon( "matt.tex" )

@@ -4,6 +4,7 @@ local assets = {
 }
 local prefabs = {}
 local start_inv = {
+	"lighter",
 	"bloodyaxe",
 }
 local common_postinit = function(inst) 

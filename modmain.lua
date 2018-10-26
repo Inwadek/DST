@@ -272,20 +272,15 @@ STRINGS.CHARACTERS.GENERIC.DESCRIBE.KATANA = "That looks creepishly sharp!!!"
 
 
 
-
-local require = GLOBAL.require
-local STRINGS = GLOBAL.STRINGS
+if GLOBAL.MODE then
 local Ingredient = GLOBAL.Ingredient
 local RECIPETABS = GLOBAL.RECIPETABS
-local TECH = GLOBAL.TECH
-local resolvefilepath = GLOBAL.resolvefilepath
-local TUNING = GLOBAL.TUNING
-
 
 local jajangmon_hw_syrup_recipe = AddRecipe("jajangmon_hw_syrup",
+--{ Ingredient("meat", 1)},
  { Ingredient("dragonfruit", 1), Ingredient("meat", 10), Ingredient("monstermeat", 10), Ingredient("goldnugget", 10)},
  RECIPETABS.FARM,
- TECH.NONE,
+ GLOBAL.TECH.NONE,
  nil,
  nil,
  nil,
@@ -293,6 +288,7 @@ local jajangmon_hw_syrup_recipe = AddRecipe("jajangmon_hw_syrup",
  nil,
  "images/inventoryimages/jajangmon_hw_syrup.xml" )
 jajangmon_hw_syrup_recipe.sortkey = 0
-GLOBAL.STRINGS.RECIPE_DESC.JAJANGMON_HW_SYRUP = "Sweet syrup made with pumpkin"
-STRINGS.NAMES.JAJANGMON_HW_SYRUP = "Pumpkin syrup"
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.JAJANGMON_HW_SYRUP = "SO Sweet"
+GLOBAL.STRINGS.RECIPE_DESC.JAJANGMON_HW_SYRUP = "Dragon Essence"
+STRINGS.NAMES.JAJANGMON_HW_SYRUP = "Dragon Essence"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.JAJANGMON_HW_SYRUP = "Dragon Essence"
+end
